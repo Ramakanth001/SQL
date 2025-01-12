@@ -1,5 +1,8 @@
-CREATE DATABASE Datta_DB;
 
-Drop database Datta_DB;
 
-----------
+CREATE TABLE Pastries(
+name varchar(50),
+quantity int
+);
+
+DROP TABLE Pastries;
