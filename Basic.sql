@@ -5,7 +5,7 @@ CREATE DATABASE database_name;
 DROP DATABASE database_name;
 
 -- select a DB to work
-USE Datta_DB;
+USE database_name;
 
 -- select current db
 select DATABASE();
@@ -15,7 +15,7 @@ CREATE TABLE TABLE_NAME (
 column_name_1 data_type,
 column_name_2 data_type,
 .............);
--- Example
+- Example
 CREATE TABLE robot (
 r_name varchar(30),
 id int,
@@ -30,6 +30,16 @@ SHOW COLUMNS FROM table_name;
 (or)
 DESC table_name;
 
--- To drop a table:
-DROP TABLE table-name;
+-- To drop a table
+DROP TABLE table_name;
+
+-- Insert into a table
+INSERT INTO table_name (column_name_1, column_name_2) 
+VALUES ('value_1', 'value_2');
+
+-- Multip-le Inserts
+INSERT INTO db (name, quantity) 
+VALUES 
+	('siri', 21), 
+	('ravi', 22);
 

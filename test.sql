@@ -5,6 +5,16 @@ name varchar(50),
 quantity int
 );
 
-DROP TABLE Pastries;
+desc Pastries;
 
-DROP TABLE Pastries_1;
+INSERT INTO Pastries (name, quantity) 
+VALUES 
+	('siri', 21), 
+	('ravi', 22);
+
+INSERT INTO Pastries (name, quantity) VALUES ('Lappa', 5);
+
+select *
+from Pastries;
+
+commit;
