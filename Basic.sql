@@ -43,3 +43,36 @@ VALUES
 	('siri', 21), 
 	('ravi', 22);
 
+-- NOT NULL constraint
+CREATE TABLE cats2 (
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
+
+-- DEFAULT Constraint
+CREATE TABLE orders  (    
+    name VARCHAR(20) DEFAULT 'unnamed',    
+    age INT DEFAULT 99  
+);
+
+-- PRIMARY KEY
+CREATE TABLE unique_cats (
+	cat_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
+-- Another option:
+CREATE TABLE unique_cats2 (
+	cat_id INT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
+
+-- AUTO_INCREMENT
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
