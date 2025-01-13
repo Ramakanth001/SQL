@@ -6,3 +6,5 @@ quantity int
 );
 
 DROP TABLE Pastries;
+
+DROP TABLE Pastries_1;
