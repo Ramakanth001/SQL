@@ -38,7 +38,7 @@ INSERT INTO table_name (column_name_1, column_name_2)
 VALUES ('value_1', 'value_2');
 
 -- Multip-le Inserts
-INSERT INTO db (name, quantity) 
+INSERT INTO table_name (name, quantity) 
 VALUES 
 	('siri', 21), 
 	('ravi', 22);
@@ -61,6 +61,7 @@ CREATE TABLE unique_cats (
     name VARCHAR(100) NOT NULL,
     age INT NOT NULL
 );
+
 -- Another option:
 CREATE TABLE unique_cats2 (
 	cat_id INT,
@@ -76,3 +77,19 @@ CREATE TABLE unique_cats3 (
     age INT NOT NULL,
     PRIMARY KEY (cat_id)
 );
+
+-- Alias (AS)
+SELECT name AS KittyName
+FROM cats;
+
+-- UPDATE 
+UPDATE table_name
+SET breed='Shorthair', name='ken' 
+WHERE breed='Tabby';
+
+-- DELETE 
+DELETE FROM cats 
+WHERE name='Egg';
+--  (Delete all rows)
+DELETE FROM cats;
+
