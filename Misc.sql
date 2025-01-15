@@ -38,3 +38,5 @@ VALUES
 -- You do NOT have master brackets for multiple row inserts like in the case of craete table command
 
 -- You can NOT give AND condition to seperate multiple condiionals in SET clause. You need to use comma instead
+
+-- `CONCAT` joins strings without a separator, while `CONCAT_WS` joins strings with a specified separator.

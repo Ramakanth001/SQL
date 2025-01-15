@@ -1,11 +1,11 @@
 -- Creating a new DB
-CREATE DATABASE database_name;
+CREATE DATABASE practice_db;
 
 -- Delete a DB
 DROP DATABASE database_name;
 
 -- select a DB to work
-USE database_name;
+USE practice_db;
 
 -- select current db
 select DATABASE();
@@ -93,4 +93,14 @@ DELETE FROM cats
 WHERE name='Egg';
 --  (Delete all rows)
 DELETE FROM cats;
+
+-- Concat
+SELECT CONCAT (author_fname, ' ', author_lname, '!!')
+AS author_full_name
+FROM books;
+
+-- Concat WITH SEPERATOR 
+SELECT CONCAT_WS('-',title, author_fname, author_lname) 
+AS author_key
+FROM books;
 
