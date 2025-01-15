@@ -1,3 +1,8 @@
+-- Create new db
+CREATE DATABASE practice_db;
+
+-- select a DB to work
+USE practice_db;
 
 CREATE TABLE books 
 	(
@@ -10,11 +15,13 @@ CREATE TABLE books
 		pages INT,
 		PRIMARY KEY(book_id)
 	);
- 
+
+desc books;
+
 INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages)
 VALUES
 ('The Namesake', 'Jhumpa', 'Lahiri', 2003, 32, 291),
-('Norse Mythology', 'Neil', 'Gaiman',2016, 43, 304),
+('Norse Mythology', 'Neil', 'Gaiman', 2016, 43, 304),
 ('American Gods', 'Neil', 'Gaiman', 2001, 12, 465),
 ('Interpreter of Maladies', 'Jhumpa', 'Lahiri', 1996, 97, 198),
 ('A Hologram for the King: A Novel', 'Dave', 'Eggers', 2012, 154, 352),
@@ -28,4 +35,5 @@ VALUES
 ('White Noise', 'Don', 'DeLillo', 1985, 49, 320),
 ('Cannery Row', 'John', 'Steinbeck', 1945, 95, 181),
 ('Oblivion: Stories', 'David', 'Foster Wallace', 2004, 172, 329),
-('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
+('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
+
