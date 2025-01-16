@@ -1,33 +1,15 @@
 -- MySQL documentaion 
 https://dev.mysql.com/doc/refman/8.4/en/
 
+-- Execute SQL under cursor
+Ctrl + Enter
+
+-- Execute all queries in file
+Shift + Ctrl + Enter
+
 -- Get current date and time
 select sysdate() from dual;
 
--- Get a list of Databases
-show databases;
-
--- Add 2 numbers
-select 3+4;
-
--- Dummy Insert (NULL values for all columns in a Record will be inserted)
-INSERT INTO PEOPLE() VALUES ();
-
--- Quotes in values
-INSERT INTO db (name, quantity) 
-VALUES 
-	('siri\s', 21), -- single quote
-	('ravi"s"', 22); -- double quote
-    
--- Usage NOT NULL and DEFAULT
-CREATE TABLE orders  (    
-    name VARCHAR(20) NOT NULL DEFAULT 'unnamed',    
-    age INT NOT NULL DEFAULT 99 
-);
-INSERT INTO People2 (first_name, last_name, age)
-VALUES
-    ('NULL', 'serin', 22);
-    
 -- (While inserting a row, if no value is provided for name or age, the default values would be inserted but this is not redundant because even though the insert can never be null since you have default, it is possible that you can insert a NULL value manually)
 
 -- Writing NOT NULL constraint for a priamry key is reduntant
@@ -43,3 +25,9 @@ VALUES
 -- You can NOT give AND condition to seperate multiple condiionals in SET clause. You need to use comma instead
 
 -- `CONCAT` joins strings without a separator, while `CONCAT_WS` joins strings with a specified separator.
+
+-- SUBSTR() == SUBSTRING()
+
+-- REPLACE() function does NOT change data in the tables. It just does it and displays
+
+-- REPLACE() fun is case sensitive
