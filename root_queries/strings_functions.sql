@@ -18,5 +18,12 @@ AS small_title
 from books;
 
 -- Starts from 3 and goes till end of string. ans = 'ppa'
-SELECT SUBSTRING('Rappa', -3,3)
+SELECT SUBSTR('Rappa', -3,3)
 AS COL;
+
+-- REPLACE (Does NOT modify rows - just for display)
+SELECT REPLACE(title, 'e ', '3')
+FROM books;
+
+SELECT REPLACE('Super Star', ' ', '-');
+
