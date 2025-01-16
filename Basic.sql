@@ -70,7 +70,6 @@ CREATE TABLE unique_cats2 (
     PRIMARY KEY (cat_id)
 );
 
-
 -- AUTO_INCREMENT
 CREATE TABLE unique_cats3 (
     cat_id INT AUTO_INCREMENT,

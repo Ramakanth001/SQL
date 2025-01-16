@@ -1,3 +1,6 @@
+-- MySQL documentaion 
+https://dev.mysql.com/doc/refman/8.4/en/
+
 -- Get current date and time
 select sysdate() from dual;
 
