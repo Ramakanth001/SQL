@@ -40,6 +40,16 @@ VALUES
 	('siri\s', 21), -- single quote
 	('ravi"s"', 22); -- double quote
 
+-- String manipulation using insert
+-- INSERT(str,pos,len,newstr) 
+SELECT INSERT('Quadratic', 3, 4, 'What');
+Ans -> 'QuWhattic';
+(3rd letter is 'a' 4th letter from this letter is 'a' So the string 'adra' is replaced by 'What')
+
+SELECT INSERT('Quadratic', 3, 2, 'Where');
+Ans -> 'QuWhrereratic';
+(3rd letter is 'a' 2nd letter from this letter is 'd' So the string 'ad' is replaced by 'Where')
+
 -- NOT NULL constraint
 CREATE TABLE cats2 (
     name VARCHAR(100) NOT NULL,

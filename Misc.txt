@@ -31,3 +31,6 @@ select sysdate() from dual;
 -- REPLACE() function does NOT change data in the tables. It just does it and displays
 
 -- REPLACE() fun is case sensitive
+
+-- CHAR_LENGTH (Gives us number of characters) and LENGTH (Gives us bytes) In case you are using chinese, 2 characters (char_length) can take 6 bytes(length)
+
