@@ -28,8 +28,7 @@ VALUES
 INSERT INTO shirts(color, article,shirt_size, last_worn)
 VALUES ('Purple', 'polo shirt', 'M', '50');
 
-SELECT *
-FROM shirts;
+SELECT * FROM shirts;
 
 SELECT color, article
 FROM shirts;
