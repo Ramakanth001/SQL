@@ -8,3 +8,7 @@ ORDER BY Author
 LIMIT 5;
 
 SELECT title FROM books LIMIT 3;
+
+SELECT COUNT(*)
+FROM books
+WHERE title like '%the%';
