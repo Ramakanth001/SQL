@@ -34,3 +34,9 @@ select sysdate() from dual;
 
 -- CHAR_LENGTH (Gives us number of characters) and LENGTH (Gives us bytes) In case you are using chinese, 2 characters (char_length) can take 6 bytes(length)
 
+-- GROUP BY (summarizes or aggregates identical data into single rows)
+
+-- GROUP BY groups rows with the same values into a single row, often used with aggregate functions like SUM or COUNT. In the GROUP BY operation, groups are formed and temporarily stored in memory (or disk if necessary) during query execution but are not directly displayed.
+
+-- ORDER BY (simply sorts) arranges rows in ascending or descending order based on one or more columns.
+
