@@ -40,3 +40,17 @@ select sysdate() from dual;
 
 -- ORDER BY (simply sorts) arranges rows in ascending or descending order based on one or more columns.
 
+-- DATA TYPES
+TINYINT - 1 byte
+SMALLINT - 2 bytes
+MEDIUMINT - 3 bytes
+INT - 4 bytes
+BIGINT - 8 bytes
+
+-- DECIMAL(5,2) means total of 5 letters (interger (3)+fractional(2) = 5) ex:- 999.99 
+
+-- FLOAT OCCUPIES 4 BYTES - 7 digits precision
+
+-- DOUBLE OCCUPIES 8 BYTES - 15 digits precision
+
+-- If accuracy is not too important or if speed is this highest priority, the DOUBLE type may be good enough. For high precision, you can always convert to a fixed-point type stored in a BIGINT. This enables you to do all calculations with 64-bit integers and then convert results back to floating-point values as necessary.
