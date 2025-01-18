@@ -47,9 +47,23 @@ SELECT
     HOUR(birthdt),
     MINUTE(birthdt)
 FROM people;
-
+  
 SELECT birthdate, DATE_FORMAT(birthdate, '%a %b %D') FROM people;
  
 SELECT birthdt, DATE_FORMAT(birthdt, '%H:%i') FROM people;
  
 SELECT birthdt, DATE_FORMAT(birthdt, 'BORN ON: %r') FROM people;
+
+SELECT birthdate, DATEDIFF(CURDATE(), birthdate) ;
+
+SELECT DATE_ADD(curdate(), INTERVAL 1 MONTH);
+
+SELECT DATE_ADD(curdate(), INTERVAL 1 YEAR);
+
+SELECT name, DATE_ADD(birthdate, INTERVAL 21 YEAR)
+AS will_be_21_yo
+FROM people;
+
+SELECT name, birthdate + INTERVAL 21 year
+AS will_be_21_yo
+FROM people;
