@@ -57,6 +57,8 @@ BIGINT - 8 bytes
 
 -- IMP: Timestamp takes up less storage than DATETIME but TIMESTAMP has less range of years
 
+-- What's the difference between DATETIME and TIMESTAMP? --> They both store datetime information, but there's a difference in the range. TIMESTAMP has a smaller range. TIMESTAMP also takes up less space. TIMESTAMP is used for things like meta-data about when something is created or updated.
+
 -- Database	TIMESTAMP Range (Not DATETIME)
 MySQL	1970-01-01 00:00:01 UTC to 2038-01-19 03:14:07 UTC
 PostgreSQL	4713 BC to 294276 AD
@@ -64,3 +66,6 @@ Oracle	4712 BC to 9999 AD
 SQL Server	1753-01-01 00:00:00 to 9999-12-31 23:59:59.997
 
 -- CURDATE() = CURRENT_DATE(),... similar for time, etc
+
+-- What's a good use case for CHAR? --> Used for text that we know has a fixed length, e.g., State abbreviations, abbreviated company names, etc.
+
