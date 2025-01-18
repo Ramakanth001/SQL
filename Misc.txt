@@ -24,7 +24,7 @@ select sysdate() from dual;
 
 -- You can NOT give AND condition to seperate multiple condiionals in SET clause. You need to use comma instead
 
--- `CONCAT` joins strings without a separator, while `CONCAT_WS` joins strings with a specified separator.
+-- CONCAT joins strings without a separator, while CONCAT_WS joins strings with a specified separator.
 
 -- SUBSTR() == SUBSTRING()
 
@@ -68,4 +68,12 @@ SQL Server	1753-01-01 00:00:00 to 9999-12-31 23:59:59.997
 -- CURDATE() = CURRENT_DATE(),... similar for time, etc
 
 -- What's a good use case for CHAR? --> Used for text that we know has a fixed length, e.g., State abbreviations, abbreviated company names, etc.
+
+-- In MySQL, any comparison with NULL returns NULL because NULL represents an unknown value, and to explicitly check for NULL, you should use IS NULL or IS NOT NULL. 
+
+-- IMP: SELECT CAST(released_year / 2 AS UNSIGNED) FROM books;
+Converts float to int
+
+-- There should be a comma (,) before case and after select attributes when using CASE statement
+(Refer comparison_and_logical_operators in root_queries)
 
