@@ -88,12 +88,14 @@ FROM people;
 -- Create a table for captions with a text field and a created_at column that defaults to the current timestamp
 CREATE TABLE captions (
   text VARCHAR(150),
-  created_at TIMESTAMP default CURRENT_TIMESTAMP
+  created_at DATETIME default CURRENT_TIMESTAMP
 );
 
 -- Create a table for captions with a text field, a created_at column, and an updated_at column that updates on modification
 CREATE TABLE captions2 (
   text VARCHAR(150),
-  created_at TIMESTAMP default CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  created_at DATETIME default CURRENT_TIMESTAMP,
+  updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
 );
+
+SELECT VERSION();
