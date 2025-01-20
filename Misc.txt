@@ -77,3 +77,6 @@ Converts float to int
 -- There should be a comma (,) before case and after select attributes when using CASE statement
 (Refer comparison_and_logical_operators in root_queries)
 
+-- Cartesian Join = Cross Join
+
+-- JOIN = INNER JOIN  ; When you don't mention anything specifically, it is inner join

@@ -92,3 +92,7 @@ ADD CONSTRAINT positive_pprice CHECK (purchase_price >= 0);
 
 -- Remove the `positive_pprice` constraint from the `houses` table.
 ALTER TABLE houses DROP CONSTRAINT positive_pprice;
+
+-- If amount is NULL, it will return 0
+SELECT first_name, last_name, ifnull(amount, 0)
+FROM customers;
