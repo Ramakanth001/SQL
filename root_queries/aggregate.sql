@@ -43,3 +43,8 @@ FROM books;
 SELECT released_year, AVG(stock_quantity), count(*)
 FROM books
 GROUP BY released_year;
+
+-- ROUND to precision 
+select title, ROUND(AVG(rating), 2) as AVG_Rating
+from reviews
+GROUP BY title;
