@@ -80,3 +80,5 @@ Converts float to int
 -- Cartesian Join = Cross Join
 
 -- JOIN = INNER JOIN  ; When you don't mention anything specifically, it is inner join
+
+-- The WITH ROLLUP clause in SQL is used with the GROUP BY statement to generate summary rows for each grouping level, including a grand total at the end. It simplifies the process of creating hierarchical totals and subtotals.
