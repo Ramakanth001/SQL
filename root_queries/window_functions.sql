@@ -139,10 +139,10 @@ SELECT
     salary - LAG(salary) OVER(ORDER BY salary DESC) as salary_diff
 FROM employees;
 
--- Question: Retrieve the employee number, department, salary, and the salary difference within each department compared to the previous salary when sorted in descending order.
+-- Question: Retrieve the employee number, department, salary, and the salary difference within each department compared to the next salary when sorted in descending order.
 SELECT 
     emp_no, 
     department, 
     salary,
-    salary - LAG(salary) OVER(PARTITION BY department ORDER BY salary DESC) as dept_salary_diff
+    salary - LEAD(salary) OVER(PARTITION BY department ORDER BY salary DESC) as dept_salary_diff
 FROM employees;
