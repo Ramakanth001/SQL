@@ -82,3 +82,8 @@ Converts float to int
 -- JOIN = INNER JOIN  ; When you don't mention anything specifically, it is inner join
 
 -- The WITH ROLLUP clause in SQL is used with the GROUP BY statement to generate summary rows for each grouping level, including a grand total at the end. It simplifies the process of creating hierarchical totals and subtotals.
+
+-- Window Functions perform aggregate operations on groups of rows, but they produce a result for each row
+
+-- use ORDER BY inside of the OVER() clause to re-order rows within each window
+
