@@ -48,7 +48,9 @@ ON students.id = papers.student_id
 GROUP BY first_name;
 
 -- Question 5: Determine whether each student is passing or failing based on their average grade, with a passing grade defined as greater than 75. Display the student's name, their average grade, and their passing status, sorted by average grade in descending order.
-SELECT first_name, IFNULL(AVG(grade), 0) AS average,
+SELECT 
+	first_name,
+	IFNULL(AVG(grade), 0) AS average,
 	CASE
 		WHEN AVG(grade) > 75
 			THEN 'PASSING'
