@@ -23,9 +23,7 @@ DELIMITER $$
 CREATE TRIGGER unfollow
      AFTER DELETE ON follows FOR EACH ROW
      BEGIN
-          INSERT INTO unfollow(follower_id, followee_id)
-          values (OLD.follower_id, OLD.followee_id)
-          END IF;
-     END;
-$$
+         INSERT INTO unfollow(follower_id, followee_id)
+         VALUES (OLD.follower_id, OLD.followee_id);
+     END$$
 DELIMITER ;
