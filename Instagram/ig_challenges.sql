@@ -71,7 +71,23 @@ select
 	(select count(*) from photos) / (select count(*) from users)
     AS average;
 
+-- Top 5 hashtags
+select tags.tag_name, tag_id, count(*) as count
+from photo_tags
+join tags
+on tags.id = photo_tags.tag_id
+GROUP BY tag_id
+ORDER BY count desc
+LIMIT 5;
+
+-- Identify bots --> users who liked every single photo on the site
+select user_id, users.username, count(*) as total_likes
+from likes
+join users
+ON likes.user_id = users.id
+GROUP BY user_id
+HAVING total_likes = (select count(*) from photos)
+;
 
 
-select count(*)
-from users;
+
