@@ -84,7 +84,7 @@ FROM customers
 LEFT JOIN orders
 ON orders.customer_id = customers.id;
 
--- Rigt join
+-- Right join
 SELECT first_name, last_name, order_date, amount
 FROM customers
 RIGHT JOIN orders ON customers.id = orders.customer_id;
