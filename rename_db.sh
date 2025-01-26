@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script is used to rename a DB
 # ==============================
 # Instructions:
 # 1. Save this script as `rename_db.sh`.
